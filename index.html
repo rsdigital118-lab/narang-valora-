@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Narang Valora | Goregaon West</title>
+
+<meta name="description"
+content="Narang Valora — premium residences in Bangur Nagar, Goregaon West, Mumbai. MahaRERA PR1180002600544.">
+
+<style>
+
+:root{
+  --black:#101010;
+  --dark:#181817;
+  --gold:#c7a56a;
+  --cream:#f4efe7;
+  --white:#fff;
+  --muted:#777;
+  --border:#ddd5c8;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--black);
+  background:#faf9f6;
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(16,16,16,.92);
+  backdrop-filter:blur(12px);
+  color:white;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.nav-inner{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+.logo span{
+  color:var(--gold);
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+  font-size:14px;
+}
+
+.nav-links a:hover{
+  color:var(--gold);
+}
+
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.nav-call{
+  color:white;
+  border:1px solid rgba(255,255,255,.3);
+  padding:11px 18px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+.nav-call:hover{
+  color:var(--gold);
+  border-color:var(--gold);
+}
+
+.nav-btn{
+  background:var(--gold);
+  color:#111;
+  padding:11px 20px;
+  border-radius:2px;
+  font-weight:bold;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+  min-height:100vh;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.78),
+      rgba(0,0,0,.3)
+    ),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85")
+    center/cover;
+
+  display:flex;
+  align-items:center;
+
+  color:white;
+
+  padding-top:76px;
+}
+
+.hero-content{
+  max-width:760px;
+}
+
+.eyebrow{
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(52px,8vw,100px);
+  font-weight:400;
+  line-height:.95;
+  margin-bottom:28px;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:620px;
+  color:#eee;
+  margin-bottom:35px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 26px;
+  border:1px solid var(--gold);
+  font-weight:bold;
+  transition:.2s;
+}
+
+.btn-primary{
+  background:var(--gold);
+  color:#111;
+}
+
+.btn-secondary{
+  color:white;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-whatsapp{
+  background:#25D366;
+  border-color:#25D366;
+  color:white;
+}
+
+.btn-whatsapp:hover{
+  background:#1ebe5d;
+  border-color:#1ebe5d;
+}
+
+
+/* =====================================================
+   RERA BAR
+===================================================== */
+
+.rera-bar{
+  background:#111;
+  color:white;
+  padding:20px 0;
+}
+
+.rera-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.rera-status{
+  color:#77d88c;
+  font-weight:bold;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section{
+  padding:100px 0;
+}
+
+.section-label{
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+h2{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:clamp(38px,5vw,60px);
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+.section-intro{
+  color:var(--muted);
+  max-width:700px;
+  font-size:17px;
+  margin-bottom:50px;
+}
+
+
+/* =====================================================
+   OVERVIEW
+===================================================== */
+
+.overview{
+  background:var(--cream);
+}
+
+.overview-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.overview-image{
+  min-height:520px;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.1),
+      rgba(0,0,0,.2)
+    ),
+    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+
+  background:var(--border);
+  border:1px solid var(--border);
+
+  margin-top:35px;
+}
+
+.stat{
+  background:var(--cream);
+  padding:25px;
+}
+
+.stat strong{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:28px;
+  margin-bottom:5px;
+}
+
+
+/* =====================================================
+   CONFIGURATIONS
+===================================================== */
+
+.config-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.config{
+  background:white;
+  border:1px solid var(--border);
+  padding:30px;
+  transition:.25s;
+}
+
+.config:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.config h3{
+  font-family:Georgia,serif;
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.config .size{
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.price{
+  font-size:20px;
+  font-weight:bold;
+  color:#8b6b36;
+}
+
+.note{
+  font-size:12px;
+  color:#888;
+  margin-top:10px;
+}
+
+
+/* =====================================================
+   VERIFIED FACTS
+===================================================== */
+
+.verified{
+  background:#111;
+  color:white;
+}
+
+.verified-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.fact{
+  border:1px solid #333;
+  padding:25px;
+  background:#181818;
+}
+
+.fact span{
+  display:block;
+  color:#aaa;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:6px;
+}
+
+.fact strong{
+  font-size:18px;
+}
+
+
+/* =====================================================
+   LOCATION
+===================================================== */
+
+.location{
+  background:var(--cream);
+}
+
+.location-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+
+.location-card{
+  background:white;
+  padding:28px;
+  border:1px solid var(--border);
+  margin-bottom:15px;
+}
+
+.location-card strong{
+  font-size:18px;
+}
+
+.map{
+  min-height:500px;
+
+  background:
+    linear-gradient(
+      rgba(30,30,30,.2),
+      rgba(30,30,30,.2)
+    ),
+    url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80")
+    center/cover;
+}
+
+
+/* =====================================================
+   AMENITIES
+===================================================== */
+
+.amenities{
+  background:#fff;
+}
+
+.amenity-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--border);
+}
+
+.amenity{
+  background:#fff;
+  padding:30px;
+  min-height:150px;
+}
+
+.amenity-number{
+  color:var(--gold);
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+
+/* =====================================================
+   DUE DILIGENCE
+===================================================== */
+
+.dd{
+  background:#f0ede7;
+}
+
+.dd-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.dd-card{
+  padding:35px;
+  background:white;
+  border:1px solid var(--border);
+}
+
+.dd-card h3{
+  font-family:Georgia,serif;
+  font-size:27px;
+  margin-bottom:20px;
+}
+
+.dd-card ul{
+  list-style:none;
+}
+
+.dd-card li{
+  padding:11px 0;
+  border-bottom:1px solid #eee;
+}
+
+.verified-tick{
+  color:#268c49;
+  margin-right:8px;
+}
+
+.warning{
+  color:#a35b00;
+  margin-right:8px;
+}
+
+
+/* =====================================================
+   DEVELOPER
+===================================================== */
+
+.developer{
+  background:#171717;
+  color:white;
+}
+
+.developer-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.timeline{
+  border-left:1px solid #555;
+  padding-left:25px;
+}
+
+.timeline-item{
+  margin-bottom:25px;
+}
+
+.timeline-item strong{
+  color:var(--gold);
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+  background:var(--gold);
+  text-align:center;
+}
+
+.cta h2{
+  max-width:800px;
+  margin:0 auto 25px;
+}
+
+.cta p{
+  max-width:650px;
+  margin:0 auto 30px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-section{
+  background:#fff;
+}
+
+.form{
+  max-width:700px;
+  margin:auto;
+  background:#f7f5f1;
+  padding:45px;
+  border:1px solid var(--border);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  border:1px solid #ccc;
+  padding:15px;
+  background:white;
+  font:inherit;
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+.form button{
+  border:0;
+  cursor:pointer;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+  background:#0d0d0d;
+  color:#aaa;
+  padding:50px 0 30px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+}
+
+footer h4{
+  color:white;
+  margin-bottom:15px;
+}
+
+footer a:hover{
+  color:var(--gold);
+}
+
+.disclaimer{
+  margin-top:40px;
+  padding-top:25px;
+  border-top:1px solid #333;
+  font-size:12px;
+  line-height:1.7;
+}
+
+
+/* =====================================================
+   FLOATING CONTACT ACTIONS
+===================================================== */
+
+.floating-actions{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:2000;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.floating-actions a{
+  display:flex;
+  align-items:center;
+  gap:9px;
+
+  min-width:145px;
+  padding:13px 18px;
+
+  border-radius:30px;
+
+  color:white;
+  font-size:14px;
+  font-weight:bold;
+
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+  transition:.2s;
+}
+
+.floating-actions a:hover{
+  transform:translateY(-3px);
+}
+
+.floating-call{
+  background:#111;
+  border:1px solid var(--gold);
+}
+
+.floating-whatsapp{
+  background:#25D366;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:850px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .overview-grid,
+  .location-grid,
+  .developer-grid,
+  .verified-grid,
+  .dd-grid{
+    grid-template-columns:1fr;
+  }
+
+  .config-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .amenity-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+@media(max-width:550px){
+
+  section{
+    padding:70px 0;
+  }
+
+  .hero h1{
+    font-size:56px;
+  }
+
+  .config-grid,
+  .amenity-grid,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .full{
+    grid-column:auto;
+  }
+
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .form{
+    padding:25px;
+  }
+
+  /* Hide navigation Call button on small screens */
+  .nav-call{
+    display:none;
+  }
+
+  /* Floating buttons become circular */
+  .floating-actions{
+    right:15px;
+    bottom:15px;
+  }
+
+  .floating-actions a{
+    min-width:auto;
+    width:52px;
+    height:52px;
+
+    padding:0;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:21px;
+  }
+
+  .floating-actions span{
+    display:none;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+  <div class="container nav-inner">
+
+    <div class="logo">
+      NARANG <span>VALORA</span>
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="#overview">
+        Overview
+      </a>
+
+      <a href="#residences">
+        Residences
+      </a>
+
+      <a href="#location">
+        Location
+      </a>
+
+      <a href="#amenities">
+        Amenities
+      </a>
+
+      <a href="#verification">
+        RERA
+      </a>
+
+    </div>
+
+
+    <!-- CALL + ENQUIRE -->
+
+    <div class="nav-actions">
+
+      <a
+        class="nav-call"
+        href="tel:+918655569888">
+        📞 Call
+      </a>
+
+      <a
+        class="nav-btn"
+        href="#enquire">
+        Enquire
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Bangur Nagar · Goregaon West · Mumbai
+      </div>
+
+
+      <h1>
+        Narang<br>
+        Valora
+      </h1>
+
+
+      <p>
+        Contemporary residences crafted for a refined Mumbai lifestyle,
+        in one of Goregaon West's established neighbourhoods.
+      </p>
+
+
+      <!-- HERO ACTION BUTTONS -->
+
+      <div class="hero-actions">
+
+        <a
+          href="#residences"
+          class="btn btn-primary">
+          Explore Residences
+        </a>
+
+
+        <a
+          href="tel:+918655569888"
+          class="btn btn-secondary">
+          📞 Call Now
+        </a>
+
+
+        <a
+          href="https://wa.me/918655569888?text=Hello%2C%20I%20am%20interested%20in%20Narang%20Valora.%20Please%20share%20the%20latest%20project%20details."
+          class="btn btn-whatsapp"
+          target="_blank"
+          rel="noopener">
+          💬 WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =====================================================
+     RERA
+===================================================== -->
+
+<div class="rera-bar">
+
+  <div class="container rera-inner">
+
+    <div>
+      MahaRERA Registration:
+      <strong>PR1180002600544</strong>
+    </div>
+
+    <div class="rera-status">
+      ● Registered Project
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+
+<section
+  id="overview"
+  class="overview">
+
+  <div class="container overview-grid">
+
+
+    <div class="overview-image"></div>
+
+
+    <div>
+
+      <div class="section-label">
+        The Project
+      </div>
+
+
+      <h2>
+        A considered address in Goregaon West.
+      </h2>
+
+
+      <p class="section-intro">
+
+        Narang Valora is positioned in Bangur Nagar,
+        Goregaon West, offering premium residential
+        configurations within an established
+        western-suburbs location.
+
+      </p>
+
+
+      <div class="stats">
+
+
+        <div class="stat">
+
+          <strong>
+            ~2.71
+          </strong>
+
+          acres reported project area
+
+        </div>
+
+
+        <div class="stat">
+
+          <strong>
+            493
+          </strong>
+
+          total units reported by property portals
+
+        </div>
+
+
+        <div class="stat">
+
+          <strong>
+            2031
+          </strong>
+
+          RERA-declared completion year
+
+        </div>
+
+
+        <div class="stat">
+
+          <strong>
+            2026
+          </strong>
+
+          RERA registration year
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     RESIDENCES
+===================================================== -->
+
+<section id="residences">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Residences
+    </div>
+
+
+    <h2>
+      Homes with space to live differently.
+    </h2>
+
+
+    <p class="section-intro">
+
+      Configuration and pricing information varies between
+      marketing sources. The figures below are indicative
+      and should be confirmed against the latest developer
+      cost sheet and MahaRERA filings.
+
+    </p>
+
+
+    <div class="config-grid">
+
+
+      <div class="config">
+
+        <h3>
+          2 BHK
+        </h3>
+
+        <div class="size">
+          From approximately 689 sq ft*
+        </div>
+
+        <div class="price">
+          Price on request
+        </div>
+
+        <div class="note">
+          Configuration reported by current property listings.
+        </div>
+
+      </div>
+
+
+      <div class="config">
+
+        <h3>
+          3 BHK
+        </h3>
+
+        <div class="size">
+          Multiple layouts reported
+        </div>
+
+        <div class="price">
+          ₹5.97 Cr+*
+        </div>
+
+        <div class="note">
+          Indicative market listing. Verify final cost sheet.
+        </div>
+
+      </div>
+
+
+      <div class="config">
+
+        <h3>
+          4 BHK
+        </h3>
+
+        <div class="size">
+          Up to approximately 2,109 sq ft*
+        </div>
+
+        <div class="price">
+          ₹9 Cr+*
+        </div>
+
+        <div class="note">
+          Indicative market pricing; varies by unit and source.
+        </div>
+
+      </div>
+
+
+      <div class="config">
+
+        <h3>
+          5 BHK
+        </h3>
+
+        <div class="size">
+          Large-format residences*
+        </div>
+
+        <div class="price">
+          ₹12 Cr+*
+        </div>
+
+        <div class="note">
+          Confirm availability, carpet area and final price.
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     VERIFIED FACTS
+===================================================== -->
+
+<section
+  id="verification"
+  class="verified">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Due Diligence
+    </div>
+
+
+    <h2>
+      Facts first.
+    </h2>
+
+
+    <p
+      class="section-intro"
+      style="color:#aaa">
+
+      The following section deliberately separates
+      regulatory information from promotional claims.
+
+    </p>
+
+
+    <div class="verified-grid">
+
+
+      <div class="fact">
+
+        <span>
+          MahaRERA Number
+        </span>
+
+        <strong>
+          PR1180002600544
+        </strong>
+
+      </div>
+
+
+      <div class="fact">
+
+        <span>
+          Registration Date
+        </span>
+
+        <strong>
+          26 May 2026
+        </strong>
+
+      </div>
+
+
+      <div class="fact">
+
+        <span>
+          Declared Completion
+        </span>
+
+        <strong>
+          31 December 2031
+        </strong>
+
+      </div>
+
+
+      <div class="fact">
+
+        <span>
+          Promoter
+        </span>
+
+        <strong>
+          Narang Realty Private Limited
+        </strong>
+
+      </div>
+
+
+      <div class="fact">
+
+        <span>
+          Location
+        </span>
+
+        <strong>
+          Bangur Nagar, Goregaon West, Mumbai
+        </strong>
+
+      </div>
+
+
+      <div class="fact">
+
+        <span>
+          Development
+        </span>
+
+        <strong>
+          Residential Project
+        </strong>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+
+<section
+  id="location"
+  class="location">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Location
+    </div>
+
+
+    <h2>
+      Connected to the western suburbs.
+    </h2>
+
+
+    <p class="section-intro">
+
+      Bangur Nagar places the project within an established
+      Goregaon residential ecosystem, with access to metro,
+      rail, road and commercial destinations.
+
+    </p>
+
+
+    <div class="location-grid">
+
+
+      <div>
+
+
+        <div class="location-card">
+
+          <strong>
+            Bangur Nagar Metro
+          </strong>
+
+          <p>
+            Approx. 0.5 km* from the project.
+          </p>
+
+        </div>
+
+
+        <div class="location-card">
+
+          <strong>
+            Goregaon Railway Station
+          </strong>
+
+          <p>
+            Approximately 2 km* away.
+          </p>
+
+        </div>
+
+
+        <div class="location-card">
+
+          <strong>
+            SV Road
+          </strong>
+
+          <p>
+            Approximately 1.7 km* away.
+          </p>
+
+        </div>
+
+
+        <div class="location-card">
+
+          <strong>
+            Western Express Highway
+          </strong>
+
+          <p>
+            Approximately 3.9 km* away.
+          </p>
+
+        </div>
+
+
+        <div class="location-card">
+
+          <strong>
+            Mumbai Airport T2
+          </strong>
+
+          <p>
+            Approximately 12 km* away.
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="map"></div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     AMENITIES
+===================================================== -->
+
+<section
+  id="amenities"
+  class="amenities">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Lifestyle
+    </div>
+
+
+    <h2>
+      Designed around everyday living.
+    </h2>
+
+
+    <p class="section-intro">
+
+      Amenities shown below represent facilities advertised
+      across project marketing material. Final amenities and
+      specifications should be verified from the sanctioned
+      plans and agreement.
+
+    </p>
+
+
+    <div class="amenity-grid">
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          01
+        </div>
+
+        <h3>
+          Clubhouse
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          02
+        </div>
+
+        <h3>
+          Swimming Pool
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          03
+        </div>
+
+        <h3>
+          Kids' Play Area
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          04
+        </div>
+
+        <h3>
+          Indoor Games
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          05
+        </div>
+
+        <h3>
+          Spa & Wellness
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          06
+        </div>
+
+        <h3>
+          Squash Court
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          07
+        </div>
+
+        <h3>
+          Party Lawn
+        </h3>
+
+      </div>
+
+
+      <div class="amenity">
+
+        <div class="amenity-number">
+          08
+        </div>
+
+        <h3>
+          Observatory Deck
+        </h3>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     DUE DILIGENCE
+===================================================== -->
+
+<section class="dd">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Before You Buy
+    </div>
+
+
+    <h2>
+      What should be verified?
+    </h2>
+
+
+    <p class="section-intro">
+
+      A premium property purchase deserves more than
+      brochure-level information. These are the items a
+      buyer should independently verify.
+
+    </p>
+
+
+    <div class="dd-grid">
+
+
+      <div class="dd-card">
+
+        <h3>
+          Verified / Reported
+        </h3>
+
+
+        <ul>
+
+
+          <li>
+
+            <span class="verified-tick">
+              ✓
+            </span>
+
+            MahaRERA registration exists
+
+          </li>
+
+
+          <li>
+
+            <span class="verified-tick">
+              ✓
+            </span>
+
+            RERA number: PR1180002600544
+
+          </li>
+
+
+          <li>
+
+            <span class="verified-tick">
+              ✓
+            </span>
+
+            Registration date: 26 May 2026
+
+          </li>
+
+
+          <li>
+
+            <span class="verified-tick">
+              ✓
+            </span>
+
+            RERA completion: December 2031
+
+          </li>
+
+
+          <li>
+
+            <span class="verified-tick">
+              ✓
+            </span>
+
+            Promoter identified as Narang Realty Private Limited
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+
+      <div class="dd-card">
+
+        <h3>
+          Needs Confirmation
+        </h3>
+
+
+        <ul>
+
+
+          <li>
+
+            <span class="warning">
+              !
+            </span>
+
+            Exact total saleable inventory
+
+          </li>
+
+
+          <li>
+
+            <span class="warning">
+              !
+            </span>
+
+            Final sanctioned tower/floor configuration
+
+          </li>
+
+
+          <li>
+
+            <span class="warning">
+              !
+            </span>
+
+            Final all-inclusive purchase price
+
+          </li>
+
+
+          <li>
+
+            <span class="warning">
+              !
+            </span>
+
+            View protection / future obstruction
+
+          </li>
+
+
+          <li>
+
+            <span class="warning">
+              !
+            </span>
+
+            Title and litigation documentation
+
+          </li>
+
+
+          <li>
+
+            <span class="warning">
+              !
+            </span>
+
+            Final amenity specifications
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEVELOPER
+===================================================== -->
+
+<section class="developer">
+
+  <div class="container developer-grid">
+
+
+    <div>
+
+
+      <div class="section-label">
+        The Developer
+      </div>
+
+
+      <h2>
+        Narang Realty
+      </h2>
+
+
+      <p
+        style="color:#bbb;font-size:17px">
+
+        Narang Realty states that it was established in
+        1988 and has developed residential and commercial
+        projects across the Mumbai Metropolitan Region.
+
+      </p>
+
+
+      <br>
+
+
+      <p style="color:#bbb">
+
+        The company's stated portfolio includes more than
+        10 landmark developments and over 3,550 families
+        served, according to its current corporate website.
+
+      </p>
+
+
+    </div>
+
+
+    <div class="timeline">
+
+
+      <div class="timeline-item">
+
+        <strong>
+          1988
+        </strong>
+
+        <p>
+          Real-estate journey begins.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <strong>
+          2012
+        </strong>
+
+        <p>
+          Windsor Grande Residences launched in Andheri West.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <strong>
+          2017
+        </strong>
+
+        <p>
+          Courtyard launched in Thane.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <strong>
+          2023
+        </strong>
+
+        <p>
+          Company states cumulative GDV crossed USD 1 billion.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <strong>
+          2026
+        </strong>
+
+        <p>
+          Narang Valora registered with MahaRERA.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+  <div class="container">
+
+
+    <div
+      class="section-label"
+      style="color:#111">
+
+      Private Preview
+
+    </div>
+
+
+    <h2>
+
+      Explore the residences before making a decision.
+
+    </h2>
+
+
+    <p>
+
+      Request the latest floor plans, availability,
+      price sheet and project documentation.
+
+    </p>
+
+
+    <a
+      href="#enquire"
+      class="btn"
+      style="background:#111;color:white;border-color:#111">
+
+      Request Details
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     ENQUIRY FORM
+===================================================== -->
+
+<section
+  id="enquire"
+  class="form-section">
+
+  <div class="container">
+
+
+    <div style="text-align:center">
+
+
+      <div class="section-label">
+        Enquiry
+      </div>
+
+
+      <h2>
+        Request Project Details
+      </h2>
+
+
+      <p
+        class="section-intro"
+        style="margin-left:auto;margin-right:auto">
+
+        Ask for the latest price sheet, floor plans,
+        availability, payment schedule and RERA documents.
+
+      </p>
+
+
+    </div>
+
+
+    <!-- FORM -->
+
+    <form
+      class="form"
+      onsubmit="submitForm(event)">
+
+
+      <div class="form-grid">
+
+
+        <input
+          required
+          type="text"
+          placeholder="Full Name">
+
+
+        <input
+          required
+          type="tel"
+          placeholder="Phone Number">
+
+
+        <input
+          type="email"
+          placeholder="Email Address">
+
+
+        <select>
+
+          <option>
+            Select Configuration
+          </option>
+
+          <option>
+            2 BHK
+          </option>
+
+          <option>
+            3 BHK
+          </option>
+
+          <option>
+            4 BHK
+          </option>
+
+          <option>
+            5 BHK
+          </option>
+
+        </select>
+
+
+        <textarea
+          class="full"
+          placeholder="What would you like to know?"></textarea>
+
+
+        <button
+          class="btn btn-primary full"
+          type="submit">
+
+          Send Enquiry on WhatsApp
+
+        </button>
+
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  <div class="container">
+
+
+    <div class="footer-grid">
+
+
+      <div>
+
+
+        <div class="logo">
+          NARANG <span>VALORA</span>
+        </div>
+
+
+        <p style="margin-top:15px">
+
+          Bangur Nagar, Goregaon West,<br>
+          Mumbai, Maharashtra.
+
+        </p>
+
+
+        <p style="margin-top:15px">
+
+          📞
+          <a href="tel:+918655569888">
+            +91 86555 69888
+          </a>
+
+        </p>
+
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Project
+        </h4>
+
+
+        <p>
+          <a href="#overview">
+            Overview
+          </a>
+        </p>
+
+
+        <p>
+          <a href="#residences">
+            Residences
+          </a>
+        </p>
+
+
+        <p>
+          <a href="#location">
+            Location
+          </a>
+        </p>
+
+
+        <p>
+          <a href="#amenities">
+            Amenities
+          </a>
+        </p>
+
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Verification
+        </h4>
+
+
+        <p>
+          MahaRERA
+        </p>
+
+
+        <p>
+          PR1180002600544
+        </p>
+
+
+        <p>
+          Completion: 31 Dec 2031
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="disclaimer">
+
+
+      <strong>
+        IMPORTANT DISCLAIMER
+      </strong>
+
+
+      <br><br>
+
+
+      This is an independent sample/information website
+      and is not the official website of Narang Realty
+      or an authorised sales representation unless expressly
+      stated otherwise.
+
+
+      <br><br>
+
+
+      Information has been compiled from publicly available
+      project, regulatory and property-market sources.
+      Prices, availability, configurations, carpet areas,
+      amenities, views, floor plans, possession timelines
+      and other project details are subject to change and
+      must be independently verified against the latest
+      MahaRERA records, sanctioned plans, developer
+      documentation and Agreement for Sale before making
+      any purchase decision.
+
+
+      <br><br>
+
+
+      Images used in this demonstration are illustrative
+      placeholders and are not representations of the
+      actual project.
+
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING CALL + WHATSAPP BUTTONS
+===================================================== -->
+
+<div class="floating-actions">
+
+
+  <a
+    href="tel:+918655569888"
+    class="floating-call"
+    aria-label="Call Narang Valora">
+
+    📞
+
+    <span>
+      Call Now
+    </span>
+
+  </a>
+
+
+  <a
+    href="https://wa.me/918655569888?text=Hello%2C%20I%20am%20interested%20in%20Narang%20Valora.%20Please%20share%20the%20latest%20details."
+    target="_blank"
+    rel="noopener"
+    class="floating-whatsapp"
+    aria-label="WhatsApp Narang Valora">
+
+    💬
+
+    <span>
+      WhatsApp
+    </span>
+
+  </a>
+
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function submitForm(event){
+
+  event.preventDefault();
+
+
+  const form = event.target;
+
+
+  const name =
+    form.querySelector('input[type="text"]').value.trim();
+
+
+  const phone =
+    form.querySelector('input[type="tel"]').value.trim();
+
+
+  const email =
+    form.querySelector('input[type="email"]').value.trim();
+
+
+  const configuration =
+    form.querySelector('select').value;
+
+
+  const message =
+    form.querySelector('textarea').value.trim();
+
+
+  /*
+     Create WhatsApp message
+  */
+
+  const whatsappMessage =
+    "Hello, I am interested in Narang Valora.\n\n" +
+
+    "Name: " +
+    name +
+    "\n" +
+
+    "Phone: " +
+    phone +
+    "\n" +
+
+    "Email: " +
+    email +
+    "\n" +
+
+    "Configuration: " +
+    configuration +
+    "\n" +
+
+    "Message: " +
+    message;
+
+
+  /*
+     Open WhatsApp
+  */
+
+  const whatsappURL =
+    "https://wa.me/918655569888?text=" +
+    encodeURIComponent(whatsappMessage);
+
+
+  window.open(
+    whatsappURL,
+    "_blank"
+  );
+
+}
+
+</script>
+
+
+</body>
+</html>

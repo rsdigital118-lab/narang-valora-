@@ -5,16 +5,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Narang Valora Goregaon West | 2, 3, 4 & 5 BHK Residences</title>
-
-<meta name="description"
-content="Explore Narang Valora in Bangur Nagar, Goregaon West, Mumbai. View 2, 3, 4 & 5 BHK residences, location, amenities, RERA details and project information.">
+<title>Narang Valora Goregaon West, Mumbai | Residences & Project Details</title>
+<meta name="description" content="Explore Narang Valora in Bangur Nagar, Goregaon West, Mumbai. Check available 2, 3, 4 and 5 BHK configurations, location details, MahaRERA information and request the latest price sheet.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://rsdigital118-lab.github.io/narang-valora-/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Narang Valora Goregaon West | 2, 3, 4 & 5 BHK Residences">
-<meta property="og:description" content="Explore Narang Valora in Bangur Nagar, Goregaon West, Mumbai. View residences, amenities, location and project details.">
+<meta property="og:title" content="Narang Valora Goregaon West, Mumbai">
+<meta property="og:description" content="Explore project details, residence configurations, location and request the latest price sheet for Narang Valora, Goregaon West.">
 <meta property="og:url" content="https://rsdigital118-lab.github.io/narang-valora-/">
-<meta property="og:site_name" content="Narang Valora">  
+<meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Narang Valora Goregaon West, Mumbai">
+<meta name="twitter:description" content="Project information, configurations, location details and enquiry for Narang Valora.">
+
 <style>
 
 :root{
@@ -1942,34 +1945,51 @@ footer a:hover{
 
         <input
           required
+          name="name"
+          autocomplete="name"
           type="text"
-          placeholder="Full Name">
+          placeholder="Full Name"
+          aria-label="Full Name">
 
 
         <input
           required
+          name="phone"
+          autocomplete="tel"
           type="tel"
-          placeholder="Phone Number">
+          inputmode="tel"
+          placeholder="Phone Number"
+          aria-label="Phone Number">
 
 
         <input
           type="email"
           placeholder="Email Address">
 
-        <label for="configuration">Select Configuration</label>
-        <select id="configuration"name="configuration">
 
-            <option value="">Select Configuration</option>
-                                                
-            <option value="2 BHK">2 BHK</option>
+        <select required aria-label="Select Configuration">
 
-            <option value="3 BHK">3 BHK</option>
+          <option value="" selected disabled>
+            Select Configuration
+          </option>
 
-            <option value="4 BHK">4 BHK</option>
+          <option>
+            2 BHK
+          </option>
 
-            <option value="5 BHK">5 BHK</option>
+          <option>
+            3 BHK
+          </option>
 
-         </select>
+          <option>
+            4 BHK
+          </option>
+
+          <option>
+            5 BHK
+          </option>
+
+        </select>
 
 
         <textarea
@@ -2215,7 +2235,7 @@ function submitForm(event){
 
 
   const configuration =
-    form.querySelector('select').value;
+    form.querySelector('select').value || "Not specified";
 
 
   const message =
